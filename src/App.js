@@ -1,24 +1,17 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+
+import SpinningCube from "./components/SpinningCube/SpinningCube"; 
+import Pic from "../src/favicon.ico"; 
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="wrapper">
+        <img src={Pic} />
+        <SpinningCube style={{"width": "50%"}} width="200" height="200" />
+      </div>
     </div>
   );
 }
